@@ -1,5 +1,5 @@
 # my-sysadmin-scripts
-<<<<<<< HEAD
+
 
 # ДЗ 1 Вариант Б
 =======
