@@ -1,5 +1,5 @@
 FROM ubuntu:22.04
-RUN apt-get update && apt-get install -y --no-install-recommends python3 \
+RUN apt-get update && apt-get install -y --no-install-recommends procps coreutils python3 \
 	&& rm -rf /var/lib/apt/lists/*
 WORKDIR /var/www
 COPY script.sh /usr/local/bin/script.sh

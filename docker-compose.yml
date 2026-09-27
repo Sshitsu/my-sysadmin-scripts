@@ -3,3 +3,17 @@ services:
     build: .
     volumes:
       - /var/log:/var/log:ro
+      - reports:/var/www
+
+  viewer:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - reports:/usr/share/nginx/html:ro
+    depends_on:
+      - app
+
+volumes:
+  reports:
+
