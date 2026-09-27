@@ -6,7 +6,7 @@
 # с временной меткой в monitor.log
 
 INTERVAL=5
-LOG_FILE="$(dirname "$0")/monitor.log"
+LOG_FILE="/var/www/monitor.log"
 
 for cmd in free df uptime date; do
     if ! command -v "$cmd" >/dev/null 2>&1; then
